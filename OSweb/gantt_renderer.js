@@ -1,7 +1,3 @@
-/*****************************************
- * رسم مخطط جانت على Canvas
- * (عضو الفريق: مسؤول الرسوميات)
- *****************************************/
 class GanttRenderer {
     static draw(canvas, entries) {
         if (entries.length === 0) return;
@@ -14,7 +10,6 @@ class GanttRenderer {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         const barHeight = 30;
-        // خط الزمن
         ctx.beginPath();
         ctx.moveTo(0, barHeight + 5);
         ctx.lineTo(width, barHeight + 5);
